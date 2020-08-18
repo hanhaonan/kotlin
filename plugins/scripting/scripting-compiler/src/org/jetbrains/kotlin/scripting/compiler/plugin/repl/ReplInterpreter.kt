@@ -42,7 +42,8 @@ class ReplInterpreter(
         ReplClassLoader(
             URLClassLoader(
                 classpathRoots.map { it.toURI().toURL() }.toTypedArray(),
-                ClassLoader.getSystemClassLoader()
+                null
+                //ClassLoader.getSystemClassLoader()
             )
         )
 
